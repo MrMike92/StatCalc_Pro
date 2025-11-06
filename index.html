@@ -22,6 +22,10 @@
 
         <div class="flex flex-col gap-2">
           <button onclick="cargarEjemplo('media')" class="btn-ejemplo bg-gradient-to-r from-sky-500 to-blue-600">Media</button>
+          <button onclick="cargarEjemplo('mediana')" class="btn-ejemplo bg-gradient-to-r from-indigo-500 to-blue-700">Mediana</button>
+          <button onclick="cargarEjemplo('moda')" class="btn-ejemplo bg-gradient-to-r from-fuchsia-500 to-pink-600">Moda</button>
+          <button onclick="cargarEjemplo('varianza')" class="btn-ejemplo bg-gradient-to-r from-cyan-500 to-blue-400">Varianza</button>
+          <button onclick="cargarEjemplo('desviacion')" class="btn-ejemplo bg-gradient-to-r from-lime-500 to-green-600">Desviación estándar</button>
           <button onclick="cargarEjemplo('anova')" class="btn-ejemplo bg-gradient-to-r from-green-500 to-emerald-600">ANOVA</button>
           <button onclick="cargarEjemplo('chi2')" class="btn-ejemplo bg-gradient-to-r from-purple-500 to-violet-600">Chi²</button>
           <button onclick="cargarEjemplo('correlacion')" class="btn-ejemplo bg-gradient-to-r from-orange-400 to-amber-600">Correlación</button>
@@ -64,7 +68,6 @@
           <option value="moda">Moda</option>
           <option value="varianza">Varianza</option>
           <option value="desviacion">Desviación estándar</option>
-          <option value="rango">Rango</option>
           <option value="anova">ANOVA</option>
           <option value="chi2">Chi-cuadrado</option>
           <option value="correlacion">Correlación (Pearson)</option>
@@ -103,8 +106,8 @@
 
       <!-- Columna derecha: se muestran las graficas resultantes -->
       <section class="w-1/2 flex flex-col justify-center items-center bg-gray-50 rounded-xl p-4 shadow-inner">
-        <canvas id="grafica" class="w-full max-h-[300px] rounded-lg"></canvas>
-        <div id="grafica3d" class="w-full h-[350px] mt-4 rounded-lg" style="display:none;"></div>
+        <canvas id="grafica" width="800" height="500" class="w-full rounded-lg"></canvas>
+        <div id="grafica3d" class="w-full h-[600px] mt-4 rounded-lg" style="display:none;"></div>
       </section>
     </main>
   </div>
