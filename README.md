@@ -53,6 +53,9 @@ StatCalc_Pro/
 | **Correlación (Pearson)** | Relación lineal entre dos variables. | Dispersión con línea de tendencia. |
 | **PCA (2D/3D)** | Reduce dimensionalidad y visualiza relaciones. | Dispersión 2D o 3D. |
 
+## Flujo general
+<image src="flujo_general.svg" alt="Flujo general de StatCalc Pro">
+
 ## Uso
 
 1. Abre `index.html` en tu navegador.  
